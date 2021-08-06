@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_application_1/Widgets/Drawer.dart';
 import 'package:flutter_application_1/Widgets/MyAppBar.dart';
+import 'package:flutter_application_1/screens/Hero1.dart';
 import 'package:flutter_application_1/screens/MyLongPressDraggable.dart';
 import 'package:flutter_application_1/screens/MyScrollable.dart';
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         // '/LongPressDraggable': (context) => HomeScreen(),
         '/MyScrollable': (context) => MyScrollable(),
         '/MyHero': (context) => MyHero(),
+        '/Hero1': (context) => Hero1(),
       },
     );
   }
