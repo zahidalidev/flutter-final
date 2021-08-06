@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_application_1/Widgets/Drawer.dart';
 import 'package:flutter_application_1/Widgets/MyAppBar.dart';
-import 'package:flutter_application_1/screens/HomeScreen.dart';
+import 'package:flutter_application_1/screens/MyLongPressDraggable.dart';
 import 'package:flutter_application_1/screens/MyScrollable.dart';
 
-import 'package:flutter_application_1/screens/AssignmentAPI5.dart';
-import 'package:flutter_application_1/screens/assignment4.dart';
+import 'package:flutter_application_1/screens/MyHero.dart';
 
 // Zahid Ali Regestration Number 2018-CS-136
 
@@ -30,8 +29,7 @@ class MyApp extends StatelessWidget {
         // When navigating to the "/second" route, build the SecondScreen widget.
         // '/LongPressDraggable': (context) => HomeScreen(),
         '/MyScrollable': (context) => MyScrollable(),
-        '/Assignment5': (context) => Assignment5(),
-        '/Assignment4': (context) => Assignment4(),
+        '/MyHero': (context) => MyHero(),
       },
     );
   }
@@ -51,6 +49,6 @@ class MyHomePage extends StatelessWidget {
           child: DrawerWidget(),
         ),
         // imported from PrimeDetect
-        body: HomeScreen());
+        body: MyLongPressDraggable());
   }
 }

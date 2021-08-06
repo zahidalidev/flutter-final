@@ -3,7 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_application_1/Widgets/Card.dart';
 import 'package:flutter_application_1/Widgets/SmallCard.dart';
 
-class HomeScreen extends StatelessWidget {
+class MyLongPressDraggable extends StatelessWidget {
   Widget _buildDragTarget(context) {
     return DragTarget<int>(
       builder: (BuildContext context, List<int> data, List<dynamic> rejects) {
