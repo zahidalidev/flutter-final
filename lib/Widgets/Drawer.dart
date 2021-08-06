@@ -9,9 +9,9 @@ var menus = [
     'active': false,
   },
   {
-    'name': 'Assignment4',
+    'name': 'MyScrollable',
     'icon': Icons.photo_rounded,
-    'route': '/Assignment4',
+    'route': '/MyScrollable',
     'active': false,
   },
   {

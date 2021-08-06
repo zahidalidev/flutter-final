@@ -5,14 +5,14 @@ import 'package:flutter_application_1/Widgets/Drawer.dart';
 
 // Zahid Ali Regestration Number 2018-CS-136
 
-class Assignment3 extends StatefulWidget {
-  Assignment3({Key key}) : super(key: key);
+class MyScrollable extends StatefulWidget {
+  MyScrollable({Key key}) : super(key: key);
 
   @override
-  _Assignment3 createState() => _Assignment3();
+  _Scrollable createState() => _Scrollable();
 }
 
-class _Assignment3 extends State<Assignment3> {
+class _Scrollable extends State<MyScrollable> {
   List items = [
     {
       'id': 1,
@@ -82,22 +82,27 @@ class _Assignment3 extends State<Assignment3> {
       // imported from PrimeDetect
       body: Container(
         margin: EdgeInsets.only(top: 20),
-        child: ListView.builder(
-          itemCount: items.length,
-          itemBuilder: (context, index) {
-            return Dismissible(
-              background: Container(color: Colors.red[300]),
-              key: Key(items[index]['title']),
-              onDismissed: (direction) {
-                dellItem(items[index], index);
-              },
-              child: MyCard(
-                title: items[index]['title'],
-                description: items[index]['description'],
-                image: "lib/assets/smash3.jpg",
-              ),
-            );
-          },
+        child: Scrollbar(
+          thickness: 10,
+          radius: Radius.circular(50),
+          isAlwaysShown: true,
+          child: ListView.builder(
+            itemCount: items.length,
+            itemBuilder: (context, index) {
+              return Dismissible(
+                background: Container(color: Colors.red[300]),
+                key: Key(items[index]['title']),
+                onDismissed: (direction) {
+                  dellItem(items[index], index);
+                },
+                child: MyCard(
+                  title: items[index]['title'],
+                  description: items[index]['description'],
+                  image: "lib/assets/smash3.jpg",
+                ),
+              );
+            },
+          ),
         ),
       ),
     );

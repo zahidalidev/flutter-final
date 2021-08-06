@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Widgets/Drawer.dart';
 import 'package:flutter_application_1/Widgets/MyAppBar.dart';
 import 'package:flutter_application_1/screens/HomeScreen.dart';
+import 'package:flutter_application_1/screens/MyScrollable.dart';
 
-import 'package:flutter_application_1/screens/Assignment3.dart';
 import 'package:flutter_application_1/screens/AssignmentAPI5.dart';
 import 'package:flutter_application_1/screens/assignment4.dart';
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         // '/': (context) => PrimeDetectState(),
         // When navigating to the "/second" route, build the SecondScreen widget.
         // '/LongPressDraggable': (context) => HomeScreen(),
-        '/Assignment3': (context) => Assignment3(),
+        '/MyScrollable': (context) => MyScrollable(),
         '/Assignment5': (context) => Assignment5(),
         '/Assignment4': (context) => Assignment4(),
       },
