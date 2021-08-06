@@ -107,7 +107,7 @@ class _DrawerWidget extends State<DrawerWidget> {
                 Container(
                   margin: EdgeInsets.only(top: 11),
                   child: Text(
-                    'Hamza Farooq',
+                    'Zahid Ali',
                     textAlign: TextAlign.start,
                     style: TextStyle(
                       fontSize: 18,
@@ -119,7 +119,7 @@ class _DrawerWidget extends State<DrawerWidget> {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: Text(
-                    'hamza@gmail.com',
+                    'm.zahidalidev@gmail.com',
                     textAlign: TextAlign.start,
                     style: TextStyle(
                       fontSize: 18,
